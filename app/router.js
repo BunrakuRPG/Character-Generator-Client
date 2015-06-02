@@ -6,9 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-
-
-
+  this.resource('characters', function() {
+    this.route('show');
+  });
 });
 
 export default Router;
