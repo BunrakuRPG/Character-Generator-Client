@@ -1,5 +1,100 @@
 <div class="container-fluid">
-<h2 id="title">Welcome to BunrakuGen</h2>
+  <h2 id="title">Welcome to BunrakuGen</h2>
 
-{{outlet}}
+  <div class="row">
+    <div class="col-md-5 col-xs-12 panel panel-default">
+      <div class="panel-body">
+        <div class="form-group">
+          <label for="character-name">Character Name</label>
+          <input type="text" class="form-control" id="character-name" placeholder="Enter your character's name">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7 col-xs-12 panel panel-default">
+      <div class="panel-body">
+        <div class="form-inline row">
+          <div class="form-group col-md-4">
+            <label for="character-class">Class</label>
+            <input type="text" class="form-control" id="character-class" placeholder="Class">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="character-background">Background</label>
+            <input type="text" class="form-control" id="character-background" placeholder="Background">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="player-name">Player Name</label>
+            <input type="text" class="form-control" id="player-name" placeholder="Player Name">
+          </div>
+        </div>
+        <div class="form-inline row">
+          <div class="form-group col-md-4">
+            <label for="character-race">Race</label>
+            <input type="text" class="form-control" id="character-race" placeholder="Race">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="character-alignment">Alignment</label>
+            <input type="text" class="form-control" id="character-alignment" placeholder="Alignment">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="character-xp">Experience</label>
+            <input type="text" class="form-control" id="character-xp" placeholder="Experience">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 col-xs-12 panel panel-default">
+      <div class="panel-body">
+        <div class="form-group">
+          <label for="character-proficiency-bonus">Proficiency Bonus</label>
+          <input type="text" class="form-control" id="character-proficiency-bonus" placeholder="Proficiency Bonus">
+        </div>
+        <div class="form-group">
+          <label for="character-inspiration">Inspiration</label>
+          <input type="text" class="form-control" id="character-inspiration" placeholder="Inspiration">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8 col-xs-12">
+      <div class="row">
+        <div class="col-md-6 col-xs-12 panel panel-default">
+            <div class="panel-body">
+              AC & HP
+            </div>
+          </div>
+          <div class="col-md-6 col-xs-12 panel panel-default">
+            <div class="panel-body">
+              Traits, bonds, ideals, flaws
+            </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-xs-12 panel panel-default">
+          <div class="panel-body">
+            Attacks and Spellcasting
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-12 panel panel-default">
+          <div class="panel-body">
+            Features and Traits
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 col-xs-12 panel panel-default">
+      <div class="panel-body">
+        Other Proficiencies and Languages
+      </div>
+    </div>
+    <div class="col-md-8 col-xs-12 panel panel-default">
+      <div class="panel-body">
+        Equipment & Character Notes
+      </div>
+    </div>
+  </div>
+
+  {{outlet}}
 </div>
