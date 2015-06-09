@@ -9,6 +9,8 @@ Router.map(function() {
   this.resource('characters', function() {
     this.route('show');
   });
+  this.route('login');
+  this.route('protected');
 });
 
 export default Router;
