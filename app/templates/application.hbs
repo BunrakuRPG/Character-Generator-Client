@@ -2,6 +2,7 @@
 
 {{#link-to 'index'}}Home{{/link-to}}
 {{#link-to 'protected'}}Protected Page{{/link-to}}
+{{#link-to 'characters'}}My Characters{{/link-to}}
 
 {{#if session.isAuthenticated}}
   <a {{ action 'invalidateSession' }}>Logout</a>

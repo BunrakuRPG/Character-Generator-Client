@@ -6,9 +6,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource('characters', function() {
-    this.route('show');
-  });
+  this.resource('characters');
+  this.resource('character', { path: '/character/:character_id' });
   this.route('login');
   this.route('protected');
 });
